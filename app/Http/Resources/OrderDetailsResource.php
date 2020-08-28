@@ -34,9 +34,7 @@ class OrderDetailsResource extends JsonResource
             array_push($returnData, ['Product Name'=>$name, 'price'=>$price, 'quantity'=>$quantity]);
         }
 
-        return [
-            $returnData
-        ];
+        return $returnData;
 
     }
 }
